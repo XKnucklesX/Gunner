@@ -11,3 +11,6 @@ commands:
          Tips:
               description: Shows the tips for this server. Varies for different servers.
               usage: /<command>      
+         Hi:
+            description: Server says hi back to you
+            usage: /<command>
