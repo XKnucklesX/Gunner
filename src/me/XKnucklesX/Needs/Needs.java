@@ -27,9 +27,11 @@ public class Needs extends JavaPlugin {
         } else if (cmd.getName().equalsIgnoreCase("hello")) {
         	player.sendMessage(ChatColor.GREEN + "Hello");
             return true;
+        } else if (cmd.getName().equalsIgnoreCase("Hi")) {
+         player.sendMessage(ChatColor.AQUA + "Hi");
+        	return true;
         } else {
-        	return false;
-        }
+         return false;
     }  
 }
  
