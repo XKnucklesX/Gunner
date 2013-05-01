@@ -9,5 +9,5 @@ commands:
                description: Server says hello back to you
                usage: /<command>
          Tips:
-              description: Shows the tips for this server
+              description: Shows the tips for this server. Varies for different servers.
               usage: /<command>      
