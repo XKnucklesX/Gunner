@@ -1,16 +1,4 @@
-name: Needs
+name: Gunner
 version: 1.0.0
-authors: [Nelsin,Igorvanloo]
-commands:
-         Needs:
-               description: Shows the developers of this plugin
-               usage: /<command>
-         Hello:
-               description: Server says hello back to you
-               usage: /<command>
-         Tips:
-              description: Shows the tips for this server. Varies for different servers.
-              usage: /<command>      
-         Hi:
-            description: Server says hi back to you
-            usage: /<command>
+authors: XKnucklesX
+description: A smalls gun Plugin.
