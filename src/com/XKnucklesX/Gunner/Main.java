@@ -44,14 +44,14 @@ public class Main extends JavaPlugin implements Listener {
 	}
 
 	private void Gun1(Player p) {
-		EnderPearl ep = p.launchProjectile(EnderPearl.class);
-		ep.setVelocity(p.getLocation().getDirection().multiply(2.5));
+		EnderPearl ep = p.launchProjectile(EnderPearl.class); //Config - EnderPearl Example
+		ep.setVelocity(p.getLocation().getDirection().multiply(2.5)); //Config - 2.5 Example
 		
 	}
 
 	private void Gun(Player p) {
-		Arrow ar = p.launchProjectile(Arrow.class);
-		ar.setVelocity(p.getLocation().getDirection().multiply(2.0)); //Depends how far 
+		Arrow ar = p.launchProjectile(Arrow.class); //Config - Arrow Example
+		ar.setVelocity(p.getLocation().getDirection().multiply(2.0)); //Config - 2.0 Example
 	}
 		
 }
