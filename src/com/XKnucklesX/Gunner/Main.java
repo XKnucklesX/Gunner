@@ -29,7 +29,7 @@ public class Main extends JavaPlugin implements Listener {
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
 		Player p = e.getPlayer();
 		if(p.getItemInHand().getType() == Material.WOOD_HOE) {
-			Gun(p);
+			Gun2(p);
 			
 		}
 	}
@@ -49,7 +49,7 @@ public class Main extends JavaPlugin implements Listener {
 		
 	}
 
-	private void Gun(Player p) {
+	private void Gun2(Player p) {
 		Arrow ar = p.launchProjectile(Arrow.class); //Config - Arrow Example
 		ar.setVelocity(p.getLocation().getDirection().multiply(2.0)); //Config - 2.0 Example
 	}
