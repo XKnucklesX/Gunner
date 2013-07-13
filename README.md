@@ -1,7 +1,5 @@
-Needs
+Gunner
 =====
 
-A Awesome Plugin for those original servers.
-
-We offer central things that a server must need. We focus on creating the game a nice environment with a easy game. 
-We have a dedicated team of developers who always try to add what is needed perfecting everything day by day. 
+A guns plugin that isn't to big. We look at trying to make your server for fun with guns. A plugin that is specifaclly 
+aimed for those servers that not focused on PVP.
