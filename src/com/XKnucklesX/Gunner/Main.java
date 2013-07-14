@@ -17,12 +17,14 @@ public class Main extends JavaPlugin implements Listener {
 	@Override 
 	public void onEnable() {
 		getServer().getPluginManager().registerEvents(this, this);
+		getConfig().options().copyDefaults(true); //Get config
+		saveConfig(); //Save config
 		
 	}
 
 	@Override
 	public void onDisable() {
-		
+		saveConfig(); //Final save - To make sure no Config loss
 	}
 	
 	@EventHandler
