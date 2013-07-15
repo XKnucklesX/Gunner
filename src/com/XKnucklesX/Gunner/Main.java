@@ -31,7 +31,7 @@ public class Main extends JavaPlugin implements Listener {
 	public void onClick2(PlayerInteractEvent e) {
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
 		Player p = e.getPlayer();
-		if(p.getItemInHand().getType() == Material.getByName(getConfig().getString("guns.gun2"))) {
+		if(p.getItemInHand().getType() == Material.valueOf(getConfig().getString("guns.gun1"))) {
 			Gun2(p);
 			
 		}
@@ -41,7 +41,7 @@ public class Main extends JavaPlugin implements Listener {
 	public void onClick1(PlayerInteractEvent e) {
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
 		Player p = e.getPlayer();
-	        if(p.getItemInHand().getType() == Material.getByName(getConfig().getString("guns.gun1"))) {
+	        if(p.getItemInHand().getType() == Material.valueOf(getConfig().getString("guns.gun1"))) {
 			Gun1(p);
 		}
 	}
