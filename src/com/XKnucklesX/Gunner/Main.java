@@ -1,8 +1,7 @@
-package com.xknucklesx.Guns;
+package com.xknucklesx.Gunner;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Arrow;
-import org.bukkit.entity.Egg;
 import org.bukkit.entity.EnderPearl;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
