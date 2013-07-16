@@ -53,9 +53,9 @@ public class Main extends JavaPlugin implements Listener {
 		}
 
         private void Gun2(Player p){
-        Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
-        a.setShooter(((LivingEntity) p));
-        a.setVelocity(p.getLocation().getDirection().multiply());
+                Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
+                a.setShooter(((LivingEntity) p));
+                a.setVelocity(p.getLocation().getDirection().multiply());
       }
 
  }
