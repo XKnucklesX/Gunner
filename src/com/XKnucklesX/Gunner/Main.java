@@ -32,7 +32,7 @@ public class Main extends JavaPlugin implements Listener {
 		Player p = e.getPlayer();
 		if(p.getItemInHand().getType() == Material.valueOf(getConfig().getString("guns.gun1"))) {
 			Gun2(p);
-			
+			saveConfig();
 		}
 	}
 	
@@ -42,6 +42,7 @@ public class Main extends JavaPlugin implements Listener {
 		Player p = e.getPlayer();
 	        if(p.getItemInHand().getType() == Material.valueOf(getConfig().getString("guns.gun1"))) {
 			Gun1(p);
+			saveConfig();
 		}
 	}
 
