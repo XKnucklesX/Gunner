@@ -1,4 +1,10 @@
-# Default Config
-Guns:
-  Gun1: 
-  Gun2:
+#Default Config
+Guns: 
+  Gun1: WOODEN_HOE
+  Gun2: STONE_HOE
+  Gun3: IRON_HOE
+#^^^^^
+#Default Settings 
+# Gun1: WOODEN_HOE
+# Gun2: STONE_HOE
+# Gun3: IRON_HOE
