@@ -58,9 +58,9 @@ public class Main extends JavaPlugin implements Listener {
 	}
 
 	private void Gun3(Player p) {
-	    EnderPearl ep = (EnderPearl) p.getWorld().spawn(p.getEyeLocation(), EnderPearl.class);
+	        EnderPearl ep = (EnderPearl) p.getWorld().spawn(p.getEyeLocation(), EnderPearl.class);
 		ep.setShooter(((LivingEntity) p));
-	    ep.setVelocity(p.getLocation().getDirection().multiply(2.5));
+	        ep.setVelocity(p.getLocation().getDirection().multiply(2.5));
 	}
 	
 	private void Gun1(Player p){
@@ -70,9 +70,9 @@ public class Main extends JavaPlugin implements Listener {
 		}
 	
     private void Gun2(Player p){
-        Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
-        a.setShooter(((LivingEntity) p));
-        a.setVelocity(p.getLocation().getDirection().multiply(2.0));
+               Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
+               a.setShooter(((LivingEntity) p));
+               a.setVelocity(p.getLocation().getDirection().multiply(2.0));
     }
 
 }
