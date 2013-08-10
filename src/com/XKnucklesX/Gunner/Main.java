@@ -32,18 +32,18 @@ public class Main extends JavaPlugin implements Listener {
 	public void onClick2(PlayerInteractEvent e) {
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
 		Player p = e.getPlayer();
-		if(p.getItemInHand().getType() == Material.getMaterial(getConfig().getString("Guns.Gun2"))) {
-			Gun2(p);
+		if(p.getItemInHand().getType() == Material.getMaterial(getConfig().getString("Guns.Gun1"))) {
+			Gun1(p);
 
 		}
 	}
 
 	@EventHandler
-	public void onClick1(PlayerInteractEvent e) {
+	public void onClick2(PlayerInteractEvent e) {
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
 		Player p = e.getPlayer();
-	        if(p.getItemInHand().getType() == Material.getMaterial(getConfig().getString("Guns.Gun1"))) {
-			Gun1(p);
+	        if(p.getItemInHand().getType() == Material.getMaterial(getConfig().getString("Guns.Gun2"))) {
+			Gun2(p);
 		}
 	}
 	
@@ -57,19 +57,19 @@ public class Main extends JavaPlugin implements Listener {
 		}
 	}
 
-	private void Gun3(Player p) {
+	private void Gun1(Player p) {
 	        EnderPearl ep = (EnderPearl) p.getWorld().spawn(p.getEyeLocation(), EnderPearl.class);
 		ep.setShooter(((LivingEntity) p));
-	        ep.setVelocity(p.getLocation().getDirection().multiply(2.5));
+	        ep.setVelocity(p.getLocation().getDirection().multiply(1.0));
 	}
 	
-	private void Gun1(Player p){
+	private void Gun2(Player p){
 		Snowball sb = (Snowball) p.getWorld().spawn(p.getEyeLocation(), Snowball.class);
 		sb.setShooter(((LivingEntity) p));
 		sb.setVelocity(p.getLocation().getDirection().multiply(1.5));
 		}
 	
-    private void Gun2(Player p){
+    private void Gun3(Player p){
                Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
                a.setShooter(((LivingEntity) p));
                a.setVelocity(p.getLocation().getDirection().multiply(2.0));
