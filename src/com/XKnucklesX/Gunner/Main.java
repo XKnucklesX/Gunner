@@ -29,7 +29,7 @@ public class Main extends JavaPlugin implements Listener {
 	}
 
 	@EventHandler
-	public void onClick2(PlayerInteractEvent e) {
+	public void onClick1(PlayerInteractEvent e) {
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
 		Player p = e.getPlayer();
 		if(p.getItemInHand().getType() == Material.getMaterial(getConfig().getString("Guns.Gun1"))) {
@@ -69,7 +69,7 @@ public class Main extends JavaPlugin implements Listener {
 		sb.setVelocity(p.getLocation().getDirection().multiply(1.5));
 		}
 	
-    private void Gun3(Player p){
+        private void Gun3(Player p){
                Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), Arrow.class);
                a.setShooter(((LivingEntity) p));
                a.setVelocity(p.getLocation().getDirection().multiply(2.0));
