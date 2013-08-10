@@ -1,10 +1,8 @@
 #Default Config
 Guns: 
   Gun1: WOODEN_HOE
+#Gun 1 Should be the weakest
   Gun2: STONE_HOE
+#Gun 2 Should be second most powerful  
   Gun3: IRON_HOE
-#^^^^^
-#Default Settings 
-# Gun1: WOODEN_HOE
-# Gun2: STONE_HOE
-# Gun3: IRON_HOE
+#Most Powerful
