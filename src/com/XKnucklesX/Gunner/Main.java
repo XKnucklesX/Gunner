@@ -57,15 +57,7 @@ public class Main extends JavaPlugin implements Listener {
 		}
 	}
 	
-		@EventHandler
-	public void onClick4(PlayerInteractEvent e) {
-		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK);
-		Player p = e.getPlayer();
-		if(p.getItemInHand().getType() == Material.getMaterial(getConfig().getString("Guns.Gun3"))) {
-			Gun4(p);
-			
-		}	
-	} 
+	
 	private void Gun1(Player p) {
 	        EnderPearl ep = (EnderPearl) p.getWorld().spawn(p.getEyeLocation(), EnderPearl.class);
 		ep.setShooter(((LivingEntity) p));
@@ -83,10 +75,6 @@ public class Main extends JavaPlugin implements Listener {
                a.setShooter(((LivingEntity) p));
                a.setVelocity(p.getLocation().getDirection().multiply(2.0));
     }
-        private void Gun4(Player p){
-               Arrow a = (Arrow) p.getWorld().spawn(p.getEyeLocation(), ---.class);
-               a.setShooter(((LivingEntity) p));
-               a.setVelocity(p.getLocation().getDirection().multiply(2.0));
-    }
+       
 
 }
